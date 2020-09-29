@@ -1,0 +1,39 @@
+///$tab Dimensao 1
+Categorias:
+LOAD
+    CategoriaID,
+    Categoria
+FROM [lib://FlatFiles/QVD/Extraido/Dimensoes/Categorias.qvd]
+(qvd);
+
+Store * from Categorias into 'lib://FlatFiles/QVD/Transformado/Dimensoes/Categorias.qvd';
+
+Produtos:
+LOAD
+    ProdutoID,
+    CategoriaID,
+    FornecedorID,
+        ProdutoID&CategoriaID&FornecedorID as ChaveProduto,
+    Produto,
+    "Preco Unitario",
+    "Custo Unitario"
+FROM [lib://FlatFiles/QVD/Extraido/Dimensoes/Produtos.qvd]
+(qvd);
+
+Store * from Produtos into 'lib://FlatFiles/QVD/Transformado/Dimensoes/Produtos.qvd';
+
+Clientes:
+LOAD
+    ClienteID,
+    Cliente,
+    "Nome Contato",
+    Endereco,
+    "Código IBGE",
+    Cidade,
+    País,
+    Estado
+FROM [lib://FlatFiles/QVD/Extraido/Dimensoes/Clientes.qvd]
+(qvd);
+
+
+Store * from Clientes into 'lib://FlatFiles/QVD/Transformado/Dimensoes/Clientes.qvd';

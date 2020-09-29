@@ -1,0 +1,511 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qCardinal": 39,
+    "qTags": [
+      "$text",
+      "$hidden",
+      "$system",
+      "$key"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qCardinal": 10,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qCardinal": 6,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qCardinal": 1,
+    "qTags": [
+      "$text",
+      "$hidden",
+      "$system",
+      "$ascii"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qCardinal": 8,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qCardinal": 8,
+    "qTags": [
+      "$text",
+      "$hidden",
+      "$system",
+      "$key",
+      "$ascii"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "Ano",
+    "qCardinal": 8,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Pedidos",
+      "Orcamento"
+    ]
+  },
+  {
+    "qName": "Categoria",
+    "qCardinal": 8,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Categorias"
+    ]
+  },
+  {
+    "qName": "CategoriaID",
+    "qCardinal": 8,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Categorias",
+      "Produtos"
+    ]
+  },
+  {
+    "qName": "ChaveProduto",
+    "qCardinal": 77,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Produtos"
+    ]
+  },
+  {
+    "qName": "Cidade",
+    "qCardinal": 29,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Clientes"
+    ]
+  },
+  {
+    "qName": "Cliente",
+    "qCardinal": 295,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Clientes"
+    ]
+  },
+  {
+    "qName": "ClienteID",
+    "qCardinal": 295,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Clientes",
+      "Pedidos"
+    ]
+  },
+  {
+    "qName": "ContaPedidoID",
+    "qCardinal": 1,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Pedidos"
+    ]
+  },
+  {
+    "qName": "Custo Unitario",
+    "qCardinal": 75,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Produtos"
+    ]
+  },
+  {
+    "qName": "CustoOrcamento",
+    "qCardinal": 19,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Orcamento"
+    ]
+  },
+  {
+    "qName": "CustoProduto",
+    "qCardinal": 1139,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "CustoReal",
+    "qCardinal": 17,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Orcamento"
+    ]
+  },
+  {
+    "qName": "Código IBGE",
+    "qCardinal": 295,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Clientes"
+    ]
+  },
+  {
+    "qName": "Data Pedido",
+    "qCardinal": 547,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Pedidos"
+    ]
+  },
+  {
+    "qName": "Desconto",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Endereco",
+    "qCardinal": 295,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Clientes"
+    ]
+  },
+  {
+    "qName": "Escritorio",
+    "qCardinal": 5,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Orcamento"
+    ]
+  },
+  {
+    "qName": "Estado",
+    "qCardinal": 19,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Clientes"
+    ]
+  },
+  {
+    "qName": "Fornecedor",
+    "qCardinal": 29,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Forncedores"
+    ]
+  },
+  {
+    "qName": "FornecedorID",
+    "qCardinal": 29,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Produtos",
+      "Forncedores"
+    ]
+  },
+  {
+    "qName": "Frete",
+    "qCardinal": 783,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Pedidos"
+    ]
+  },
+  {
+    "qName": "Margem",
+    "qCardinal": 1884,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Mes",
+    "qCardinal": 12,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Pedidos"
+    ]
+  },
+  {
+    "qName": "Nome Contato",
+    "qCardinal": 295,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Clientes"
+    ]
+  },
+  {
+    "qName": "País",
+    "qCardinal": 1,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Clientes"
+    ]
+  },
+  {
+    "qName": "PedidoID",
+    "qCardinal": 1672,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Pedidos",
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Preco Unitario",
+    "qCardinal": 60,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Produtos"
+    ]
+  },
+  {
+    "qName": "PrecoUnitarioPedido",
+    "qCardinal": 1697,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Produto",
+    "qCardinal": 77,
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Produtos"
+    ]
+  },
+  {
+    "qName": "ProdutoID",
+    "qCardinal": 77,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Produtos",
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Quantidade",
+    "qCardinal": 56,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "ReceitaOrcamento",
+    "qCardinal": 17,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Orcamento"
+    ]
+  },
+  {
+    "qName": "ReceitaReal",
+    "qCardinal": 20,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Orcamento"
+    ]
+  },
+  {
+    "qName": "Transportador",
+    "qCardinal": 3,
+    "qTags": [
+      "$text",
+      "$ascii"
+    ],
+    "qSrcTables": [
+      "Transportadoras"
+    ]
+  },
+  {
+    "qName": "TransportadorID",
+    "qCardinal": 3,
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Transportadoras",
+      "Pedidos"
+    ]
+  },
+  {
+    "qName": "Valor Bruto",
+    "qCardinal": 2070,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "ValorLiquido",
+    "qCardinal": 2097,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "Venda Liquida",
+    "qCardinal": 2130,
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "DetalhesPedidos"
+    ]
+  },
+  {
+    "qName": "VendedorID",
+    "qCardinal": 9,
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Pedidos"
+    ]
+  }
+]

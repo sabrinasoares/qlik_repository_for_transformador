@@ -1,0 +1,14 @@
+///$tab Orcamento
+Orcamento:
+LOAD
+    Escritorio,
+    Ano,
+    ReceitaOrcamento,
+    CustoOrcamento,
+    ReceitaReal,
+    CustoReal
+FROM [lib://FlatFiles/QVD/Extraido/Fatos/Orcamento.qvd]
+(qvd);
+
+
+Store * from Orcamento into 'lib://FlatFiles/QVD/Transformado/Fatos/Orcamento.qvd';

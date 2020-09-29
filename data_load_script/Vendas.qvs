@@ -1,0 +1,35 @@
+///$tab Vendas
+Pedidos:
+LOAD
+    PedidoID,
+    ContaPedidoID,
+    ClienteID,
+    TransportadorID,
+    VendedorID,
+    "Data Pedido",
+    Year("Data Pedido") 				as Ano,
+    Month("Data Pedido") 			as Mes,
+    Frete
+FROM [lib://FlatFiles/QVD/Extraido/Fatos/Pedidos.qvd]
+(qvd);
+
+
+Store * from Pedidos into 'lib://FlatFiles/QVD/Transformado/Fatos/Pedidos.qvd';
+
+DetalhesPedidos:
+LOAD
+    PedidoID,
+    ProdutoID,
+    PrecoUnitarioPedido,
+    CustoProduto,
+    Quantidade,
+    (Quantidade * PrecoUnitarioPedido) - Desconto 			as "Venda Liquida",
+    Desconto,
+    ValorBruto 												as "Valor Bruto",
+    ValorLiquido,
+    Margem
+FROM [lib://FlatFiles/QVD/Extraido/Fatos/DetalhesPedidos.qvd]
+(qvd);
+
+
+Store * from DetalhesPedidos into 'lib://FlatFiles/QVD/Transformado/Fatos/DetalhesPedidos.qvd';

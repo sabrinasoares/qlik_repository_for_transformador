@@ -1,0 +1,19 @@
+///$tab Dimensao 2
+Transportadoras:
+LOAD
+    TransportadorID,
+    Transportador
+FROM [lib://FlatFiles/QVD/Extraido/Dimensoes/Transportadoras.qvd]
+(qvd);
+
+
+Store * from Transportadoras into 'lib://FlatFiles/QVD/Transformado/Dimensoes/Transportadoras.qvd';
+
+Forncedores:
+LOAD
+    FornecedorID,
+    Fornecedor
+FROM [lib://FlatFiles/QVD/Extraido/Dimensoes/Forncedores.qvd]
+(qvd);
+
+Store * from Forncedores into 'lib://FlatFiles/QVD/Transformado/Dimensoes/Forncedores.qvd';
