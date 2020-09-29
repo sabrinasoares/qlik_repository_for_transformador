@@ -13,10 +13,10 @@ LOAD
     ProdutoID,
     CategoriaID,
     FornecedorID,
-        ProdutoID&CategoriaID&FornecedorID as ChaveProduto,
-    Produto,
-    "Preco Unitario",
-    "Custo Unitario"
+    ProdutoID&CategoriaID&FornecedorID as ChaveProduto,
+    Produto//,
+    //"Preco Unitario",
+   // "Custo Unitario"
 FROM [lib://FlatFiles/QVD/Extraido/Dimensoes/Produtos.qvd]
 (qvd);
 
@@ -26,7 +26,7 @@ Clientes:
 LOAD
     ClienteID,
     Cliente,
-    "Nome Contato",
+    "Nome Contato" as Contato,
     Endereco,
     "Código IBGE",
     Cidade,

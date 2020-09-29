@@ -3,7 +3,7 @@
     "qIsHidden": true,
     "qIsSystem": true,
     "qName": "$Field",
-    "qCardinal": 39,
+    "qCardinal": 37,
     "qTags": [
       "$text",
       "$hidden",
@@ -171,13 +171,14 @@
     ]
   },
   {
-    "qName": "Custo Unitario",
-    "qCardinal": 75,
+    "qName": "Contato",
+    "qCardinal": 295,
     "qTags": [
-      "$numeric"
+      "$text",
+      "$ascii"
     ],
     "qSrcTables": [
-      "Produtos"
+      "Clientes"
     ]
   },
   {
@@ -333,17 +334,6 @@
     ]
   },
   {
-    "qName": "Nome Contato",
-    "qCardinal": 295,
-    "qTags": [
-      "$text",
-      "$ascii"
-    ],
-    "qSrcTables": [
-      "Clientes"
-    ]
-  },
-  {
     "qName": "País",
     "qCardinal": 1,
     "qTags": [
@@ -365,16 +355,6 @@
     "qSrcTables": [
       "Pedidos",
       "DetalhesPedidos"
-    ]
-  },
-  {
-    "qName": "Preco Unitario",
-    "qCardinal": 60,
-    "qTags": [
-      "$numeric"
-    ],
-    "qSrcTables": [
-      "Produtos"
     ]
   },
   {
